@@ -1,7 +1,31 @@
 aid: dcs-travel
-name: Dcs Travel
-description: Dcs Travel is a company surfaced as a portfolio company of earlybird and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dcs-travel.png
+name: DCS-Touristik (DCS Travel)
+description: >-
+  DCS-Touristik GmbH, trading as DCS Travel (dcs.travel), is a German river- and
+  sea-cruise operator based in Nagel, Germany. The company organizes river
+  cruises on major European waterways — primarily the Danube and the Rhine — as
+  well as sea cruises along the Croatian coast, operating its own vessels
+  including the DCS Amethyst 1 and DCS Amethyst 2. Its business is direct
+  consumer travel booking: multi-day cruise packages (roughly 3 to 12 days),
+  organized transfers and shore excursions, themed sailings, travel-insurance
+  partnerships, and early-booking discounts. This is a consumer-facing tourism
+  brand with no public developer program, API, SDK, or developer documentation.
+  It was originally added to the API Evangelist network as a venture-portfolio
+  stub; that classification appears to be a false match (the "early-bird" cruise
+  discount wording rather than the Earlybird venture firm), and no API surface
+  was found during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/dcs-travel/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +33,34 @@ x-backed-by:
 - earlybird
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: >-
+  No API/developer surface found. dcs.travel resolves to DCS-Touristik GmbH, a
+  consumer river-cruise operator. Likely a false-positive VC-portfolio match.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Travel
+- Tourism
+- Cruises
+- River Cruises
+- Hospitality
+- Germany
+- Booking
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/dcs-travel-domain-security.yml
+- type: Website
+  url: https://dcs.travel/
+apis: []
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
