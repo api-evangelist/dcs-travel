@@ -36,7 +36,7 @@ x-tier-reason: portfolio-lead
 x-enrichment-note: >-
   No API/developer surface found. dcs.travel resolves to DCS-Touristik GmbH, a
   consumer river-cruise operator. Likely a false-positive VC-portfolio match.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
